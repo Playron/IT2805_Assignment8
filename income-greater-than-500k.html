@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Income greather than 500 000</title>
+  <meta charset="UTF-8">
+  <script src="taxForms.js"></script>
+</head>
+
+<body>
+  <script>
+    //Iterates over taxForms objects, and filter out objects that has
+    //income less than 500000. Prints object to console.
+    for (i = 0; i < taxForms.length; i++) {
+      if (taxForms[i].income >= 500000)
+        console.log(taxForms[i].realName);
+    }
+  </script>
+</body>
+
+</html>
