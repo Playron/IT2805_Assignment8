@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 
 <head>
   <title>Tax forms: Bar chart with lines</title>
@@ -37,18 +37,18 @@
     /*Function for Task 3
       This function draws a fillrect with a text line on the right side of the rectangle
     */
-    function drawBoxWithText(text, x, y, width, height, color){
+    function drawBoxWithText(text, x, y, width, height, color) {
       context.beginPath();
       context.fillStyle = color;
       context.fillRect(x, y, width, height);
-      drawText(text, x + width + 5, y + (height/2));  
+      drawText(text, x + width + 5, y + (height / 2));
     }
     /* Insert your code here. */
     for (i = 1; i <= 10; i++) {
-      drawLineWithText(1100000 - (i*100000), 50, i*50, 700-100, i*50);
+      drawLineWithText(1100000 - (i * 100000), 50, i * 50, 700 - 100, i * 50);
     }
 
-    drawBoxWithText("Income",610, 50, 40, 20, "red");
+    drawBoxWithText("Income", 610, 50, 40, 20, "red");
     drawBoxWithText("Wealth", 610, 80, 40, 20, "blue");
   </script>
 </body>
